@@ -4,8 +4,8 @@ import "./header.css"
 
 function Header () {
   return(
-    <div className="inner">
-      <div className="header">
+    <div className="header-wrapper">
+      <div className="header inner">
         <a className="logo" href="/">
           Intra
         </a>
