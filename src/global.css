@@ -1,0 +1,31 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+.inner {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.not-found {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-content h2,
+.not-found-content p {
+  margin: 0;
+}
