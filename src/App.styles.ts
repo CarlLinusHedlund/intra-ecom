@@ -1,3 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-export const 
+export const StyledApp = styled.div`
+  padding-left: 10px;
+  padding-right: 10px;
+`;

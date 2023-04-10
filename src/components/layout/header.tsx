@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import { StyledHeader } from "./header.styles";
+
 
 function Header () {
   return(
-    <div className="">
+    <StyledHeader>
       <p>Intra</p>
       <nav>
         <Link to="#">
@@ -12,7 +14,7 @@ function Header () {
           Products
         </Link>
       </nav>
-    </div>
+    </StyledHeader>
   )     
 }
 
