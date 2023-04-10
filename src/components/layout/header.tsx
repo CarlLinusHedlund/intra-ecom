@@ -1,20 +1,26 @@
 import { Link } from "react-router-dom";
-import { StyledHeader } from "./header.styles";
+import "./header.css"
 
 
 function Header () {
   return(
-    <StyledHeader>
-      <p>Intra</p>
-      <nav>
-        <Link to="#">
-          Home
-        </Link>
-        <Link to="#">
-          Products
-        </Link>
-      </nav>
-    </StyledHeader>
+    <div className="inner">
+      <div className="header">
+        <a className="logo" href="/">
+          Intra
+        </a>
+        <nav className="nav-wrapper">
+          <Link to="/products">
+            Products
+          </Link>
+          <Link to="/cart" className="cart-wrapper">
+            <img src="./cart.svg" alt="cart" />
+            <p className="cart-items">10</p>
+          </Link>
+        </nav>
+      </div>
+    </div>
+    
   )     
 }
 
