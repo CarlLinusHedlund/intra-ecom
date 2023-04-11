@@ -1,6 +1,6 @@
 import Router from "../router";
-import Footer from "./footer";
-import Header from "./header";
+import Footer from "../footer";
+import Header from "../header";
 
 function Layout() {
   return (
@@ -9,9 +9,7 @@ function Layout() {
       <Router />
       <Footer />
     </>
-  )
-  
+  );
 }
-
 
 export default Layout;

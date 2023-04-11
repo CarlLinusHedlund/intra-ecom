@@ -1,4 +1,4 @@
-import "./index.css"
+import "./index.css";
 
 function Home() {
   return (
@@ -7,8 +7,7 @@ function Home() {
         <h1>Home</h1>
       </div>
     </div>
-    
-  )
+  );
 }
 
 export default Home;
