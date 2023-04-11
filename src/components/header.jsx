@@ -9,7 +9,7 @@ function Header() {
           Intra
         </a>
         <nav className="nav-wrapper">
-          <Link to="/products">Products</Link>
+          <Link to="/products">Store</Link>
           <Link to="/cart" className="cart-wrapper">
             <img src="./cart.svg" alt="cart" />
             <p className="cart-items">10</p>
