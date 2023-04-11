@@ -5,21 +5,19 @@ import Layout from "./components/layout/layout";
 import "./global.css";
 import { fetchProducts } from "./store/modules/listings";
 
-
 function App() {
   const dispatch = useDispatch();
-  const {products} = useSelector(state => state.listings)
+  const { products } = useSelector((state) => state.listings);
 
   useEffect(() => {
-    dispatch(fetchProducts())
-  }, [])
-  
-  return(
-      <BrowserRouter>
-        <Layout />
-      </BrowserRouter>
-  )
- 
+    dispatch(fetchProducts());
+  }, [dispatch]);
+
+  return (
+    <BrowserRouter>
+      <Layout />
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

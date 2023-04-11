@@ -11,7 +11,7 @@ const listingsSlice = createSlice({
   },
   reducers: {
     SET_PRODUCTS: (state, action) => {
-
+      state.products = action.payload
     }
   }
 })
@@ -25,7 +25,7 @@ export default listingsSlice.reducer;
 
 const {SET_PRODUCTS} = listingsSlice.actions
 
-export const fetchProducts = () => async (dispatch: Dispatch) => {
+export const fetchProducts = () => async (dispatch) => {
   try {
     const response = await fetch("https://api.noroff.dev/api/v1/online-shop")
     const data = await response.json();
