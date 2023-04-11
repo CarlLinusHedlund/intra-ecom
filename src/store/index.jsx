@@ -1,15 +1,13 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import listings from "./modules/listings";
 
-
 const reducer = combineReducers({
   //i will list my modules
-  listings
-})
-
+  listings,
+});
 
 const index = configureStore({
-  reducer, 
-})
+  reducer,
+});
 
 export default index;

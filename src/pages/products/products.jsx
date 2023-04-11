@@ -1,11 +1,11 @@
-import "./index.css"
+import "./index.css";
 
 function Products() {
-  return(
+  return (
     <div className="inner">
       <h1>Products</h1>
     </div>
-  )
+  );
 }
 
 export default Products;

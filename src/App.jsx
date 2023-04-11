@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import Layout from "./components/layout/layout";
 import "./global.css";
 import { fetchProducts } from "./store/modules/listings";
+import "./App.css";
 
 function App() {
   const dispatch = useDispatch();
@@ -11,7 +12,7 @@ function App() {
 
   useEffect(() => {
     dispatch(fetchProducts());
-  }, [dispatch]);
+  }, []);
 
   return (
     <BrowserRouter>
