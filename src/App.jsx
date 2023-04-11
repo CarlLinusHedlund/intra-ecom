@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import Layout from "./components/layout/layout";
-import "./global.css";
 import { fetchProducts } from "./store/modules/listings";
 import "./App.css";
 
@@ -12,7 +11,7 @@ function App() {
 
   useEffect(() => {
     dispatch(fetchProducts());
-  }, []);
+  }, [dispatch]);
 
   return (
     <BrowserRouter>
