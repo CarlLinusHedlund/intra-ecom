@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { fetchSingleProduct } from "../../store/modules/products";
+import { addSingleProductToCart } from "../../store/modules/cartSlice";
+
 import "./productDetail.css";
 
 function ProductDetail() {
@@ -40,7 +42,12 @@ function ProductDetail() {
                     : singleProduct.discountedPrice}
                 </p>
               </div>
-              <button className="add-to-cart-btn">Add To Cart</button>
+              <button
+                onClick={() => dispatch(addSingleProductToCart(singleProduct))}
+                className="add-to-cart-btn"
+              >
+                Add To Cart
+              </button>
             </div>
           </div>
         </div>

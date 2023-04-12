@@ -1,0 +1,101 @@
+.cart-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.item-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.214);
+  margin: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+}
+
+.price p{
+  font-size: 24px;
+}
+
+.cart-img {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-img img{
+  width: 100%;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgb(144, 144, 144);
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.remove-btn:hover{
+  scale: 1.1;
+}
+
+.price-container{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.subtotal, .shipping {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subtotal p:nth-child(2), .shipping p:nth-child(2){
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.subtotal p:nth-child(1), .shipping p:nth-child(1){
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.subtotal-and-shipping{
+  border-bottom: 2px solid rgba(0, 0, 0, 0.293);
+}
+
+.total-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-wrapper:nth-child(2){
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.submit-btn {
+  margin: 20px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(67, 67, 196);
+  padding: 20px;
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
