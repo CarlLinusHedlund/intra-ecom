@@ -5,7 +5,7 @@ import Herobanner from "./components/herobanner";
 import "./index.css";
 
 function Home() {
-  const { products } = useSelector((state) => state.listings);
+  const { products } = useSelector((state) => state.products);
   console.log("listings: ", products);
   return (
     <div className="inner">

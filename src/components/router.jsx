@@ -3,7 +3,7 @@ import Home from "../pages/home";
 import Cart from "../pages/cart/cart";
 import Products from "../pages/products/products";
 import NotFound from "./notFound";
-import ProductDetail from "../pages/specificProduct/specificProduct";
+import ProductDetail from "../pages/productDetail/productDetail";
 
 function Router() {
   return (

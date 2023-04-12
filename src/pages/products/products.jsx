@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import "./index.css";
 
 function Products() {
-  const { products } = useSelector((state) => state.listings);
-  console.log("listings: ", products);
+  const { products } = useSelector((state) => state.products);
 
   return (
     <div className="inner">
