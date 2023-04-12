@@ -2,12 +2,12 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import Layout from "./components/layout/layout";
-import { fetchProducts } from "./store/modules/listings";
+import { fetchProducts } from "./store/modules/products";
 import "./App.css";
 
 function App() {
   const dispatch = useDispatch();
-  const { products } = useSelector((state) => state.listings);
+  const { products } = useSelector((state) => state.products);
 
   useEffect(() => {
     dispatch(fetchProducts());

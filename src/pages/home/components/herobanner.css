@@ -1,0 +1,16 @@
+.herobanner-container{
+  object-fit: fill;
+  width: 100%;
+  padding-top: 40px; 
+}
+
+.herobanner-container img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px){
+  .herobanner-container img{
+    border-radius: 15px;
+  }
+}

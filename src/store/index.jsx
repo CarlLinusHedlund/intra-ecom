@@ -1,9 +1,9 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import listings from "./modules/listings";
+import products from "./modules/products";
 
 const reducer = combineReducers({
   //i will list my modules
-  listings,
+  products,
 });
 
 const index = configureStore({
