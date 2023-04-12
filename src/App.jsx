@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import Layout from "./components/layout/layout";
 import { fetchProducts } from "./store/modules/products";
+import Loader from "./components/loader";
 import "./App.css";
 
 function App() {
@@ -13,9 +14,12 @@ function App() {
     dispatch(fetchProducts());
   }, [dispatch]);
 
+  const { isLoading } = useSelector((state) => state.loader);
+
   return (
     <BrowserRouter>
       <Layout />
+      {isLoading && <Loader />}
     </BrowserRouter>
   );
 }
