@@ -14,27 +14,38 @@ function ProductDetail() {
   }, []);
 
   return (
-    <div className="inner">
-      <div className="container">
-        <div className="product-img">
-          <img src="../shopping.jpg" alt="" />
-        </div>
-        <div className="product-container">
-          <div className="product-info">
-            <h2 className="text">Category</h2>
-            <h1 className="text">Title</h1>
-            <p className="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate aliquam labore eos, pariatur et veritatis aut
-              necessitatibus fugiat asperiores expedita possimus, qui unde non
-              enim excepturi. Animi amet quod sequi!
-            </p>
-            <p className="price">NOK 400</p>
+    <>
+      {singleProduct && (
+        <div className="inner">
+          <div className="container">
+            <div className="product-img">
+              <img src={singleProduct.imageUrl} alt="" />
+            </div>
+            <div className="product-container">
+              <div className="product-info">
+                <div className="text tags">
+                  {singleProduct.tags.map((tag) =>
+                    tag
+                      .split(",")
+                      .map((t) => <span key={t.trim()}>{t.trim()}</span>)
+                  )}
+                </div>
+                {/* <h2 className="text">{singleProduct.tags}</h2> */}
+                <h1 className="text">{singleProduct.title}</h1>
+                <p className="text">{singleProduct.description}</p>
+                <p className="price">
+                  NOK{" "}
+                  {singleProduct.price === singleProduct.discountedPrice
+                    ? singleProduct.price
+                    : singleProduct.discountedPrice}
+                </p>
+              </div>
+              <button className="add-to-cart-btn">Add To Cart</button>
+            </div>
           </div>
-          <button className="add-to-cart-btn">Add To Cart</button>
         </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 }
 
